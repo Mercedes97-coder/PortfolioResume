@@ -74,10 +74,66 @@
             <div class="scroll__icon click"></div>
         </a>
         <div class="modal">
-            <div class="modal__half modal__about">Here's a bit about me.</div>
-            <div class="modal__half modal__contact">Let's have a chat!</div>
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a <b class="orange">frontend developer</b> with skills in HTML, CSS, JavaScript, and React. My journey into programming began creating websites for my massage therapy practice, which revealed a passion for coding's creative possibilities. I'm particularly interested in apps that solve real problems—wellness tools, habit trackers, and self-reflection platforms.                    
+                    <br>
+                    My background in music (Bachelor's degree) and wellness practices provides strong attention to detail, creative problem-solving abilities, and deep insight into user needs. I bring this unique perspective and technical skills to diverse projects, creating meaningful user experiences that make a difference.                
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Html-1.svg/640px-Html-1.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/500px-JavaScript-logo.png" alt="">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" alt="">
+                        <span class="language__name">React</span>
+
+                    </figure>
+                </div>
+        
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat.
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities.
+                </h4>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way.
+                    </button>
+                </form>
+                    <div class="modal__overlay modal__overlay--loading">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+            </div>
         </div>
     </section>
+
     <section id="projects">
         <div class="container">
             <div class="row">
@@ -190,7 +246,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div>    
         </div>
     </section>
     <footer>
